@@ -1,0 +1,7 @@
+{
+  "name": "ep_eliascuevas",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

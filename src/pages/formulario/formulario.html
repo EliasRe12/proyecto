@@ -1,0 +1,78 @@
+<ion-header>
+<ion-navbar color="dark">
+  <ion-title><p style="color: greenyellow">Cursos Modulares</p></ion-title>
+</ion-navbar>
+</ion-header>
+
+<ion-content padding style="background-color: black">
+  <button ion-button (click)="volver()">Volver</button>
+  <ion-card style="background-color: rgb(54, 207, 40)">
+    <ion-card-header>
+      <h1>T.I.C</h1>
+    </ion-card-header>
+    <ion-card-content>
+      <img [src]="'assets/imgs/tic.jpg'"/>
+      <div class="card-title">
+        Son el conjunto de tecnologías desarrolladas para gestionar información y enviarla de un lugar a otro.
+        Abarcan un abanico de soluciones muy amplio. Incluyen las tecnologías para almacenar información y recuperarla después,
+        enviar y recibir información de un sitio a otro, o procesar información para poder calcular resultados y elaborar informes
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card style="background-color: rgb(54, 207, 40)">
+    <ion-card-header>
+      <h1>Mecatrónica</h1>
+    </ion-card-header>
+    <ion-card-content>
+      <img [src]="'assets/imgs/meca.jpg'"/>
+      <div class="card-title">
+        Es la disciplina que agrega Electricidad, Electrónica,
+        Informática y Control al diseño, fabricación y mantenimiento de dispositivos y máquinas propios de la Ingeniería Mecánica.
+        Surgió en la década de los ochenta, con la aplicación generalizada del microprocesador en el ámbito tecnológico.
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card style="background-color: rgb(54, 207, 40)">
+    <ion-card-header>
+      <h1>Diseño de Modas</h1>
+    </ion-card-header>
+    <ion-card-content>
+      <img [src]="'assets/imgs/diseño.jpg'"/>
+      <div class="card-title">
+        Se encarga de la creación de ropa y de accesorios en función
+        de las influencias culturales y sociales de un período específico.
+        Representa el estilo e idea del creador, según su talento y sus conocimientos
+      </div>
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-item>
+    <ion-label>Check 1</ion-label>
+    <ion-checkbox checked="true"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Check 2</ion-label>
+    <ion-checkbox checked="danger"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Toogle 1</ion-label>
+    <ion-checkbox disabled></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Toogle 2</ion-label>
+    <ion-checkbox color="secondary"></ion-checkbox>
+  </ion-item>
+  <ion-list radio-group>
+    <ion-item>
+      <ion-label>Radio 1</ion-label>
+      <ion-radio value="red"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Radio 2</ion-label>
+      <ion-radio value="green"></ion-radio>
+    </ion-item>
+  </ion-list>
+  
+  </ion-content>

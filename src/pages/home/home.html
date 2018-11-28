@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-buttons start>
+      <button ion-button icon-only><ion-icon name="paper-plane" style="color:dodgerblue"></ion-icon></button>
+      <button ion-button icon-only><ion-icon name="create" style="color:darkorange"></ion-icon></button>
+      <button ion-button icon-only><ion-icon name="construct" style="color:gray;"></ion-icon></button>
+    </ion-buttons>
+    <ion-buttons>
+
+    </ion-buttons>
+    <ion-title>
+      <p style="color: greenyellow">Inicio</p>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding style="background-color: black">
+
+  <ion-segment [(ngModel)]="seleccion" style="background-color: #f4f4f4">
+    <ion-segment-button value="opcion1" style="color: black">Brillo</ion-segment-button>
+  </ion-segment>
+    <div *ngIf="seleccion == 'opcion1'" style="background-color: #f4f4f4">
+      <ion-item style="background-color: greenyellow">
+        <ion-range min="10" max="200">
+          <ion-icon range-left small name="sunny"></ion-icon>
+          <ion-icon range-right name="sunny"></ion-icon>
+        </ion-range>
+      </ion-item>
+    </div>
+
+   <ion-card style="background-color:lavender">
+    <ion-card-header>
+      <h1></h1>
+    </ion-card-header>
+    <ion-card-content>
+      <img [src]="'assets/imgs/cta.png'"/>
+      <div class="card-title">
+        <button ion-button (click)="agregarPagina()">Técnicaturas</button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  
+
+    <ion-list-header style="background-color:rgba(143, 224, 13, 0.993); color: rgb(16, 19, 16)"><h1><b>Cursos Disponibles</b></h1></ion-list-header>
+    <ion-item-group>
+      <ion-item *ngFor="let item of lista" text-left detail-push="">
+      <ion-avatar item-left><img [src]="'assets/iconos/ico_'+item.id+'.jpg'"></ion-avatar>
+
+        <ion-label>{{item.titulo}}</ion-label>
+        <h2 >{{item.titulo}}</h2>
+        <!--<ion-toggle style="color:gold"> </ion-toggle>-->
+
+      </ion-item>
+
+
+    </ion-item-group>
+
+</ion-content>
